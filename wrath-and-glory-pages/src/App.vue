@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/WrathAndGloryLogo.jpg">
+  <WelcomePage msg="Wrath and Glory Character Builder"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import WelcomePage from './components/Welcome.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'Wrath-and-Glory-Character-Creation',
+  components: {WelcomePage},
+  component: {
+    //HelloWorld
+    WelcomePage
   }
 }
 </script>
