@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/WrathAndGloryLogo.jpg">
-  <WelcomePage msg="Wrath and Glory Character Builder"/>
+  <img alt="Wrath & Glory Logo" src="./assets/WrathAndGloryLogo.jpg">
+  <WelcomePage welcomeMessage="Wrath and Glory Character Builder"/>
 </template>
 
 <script>
