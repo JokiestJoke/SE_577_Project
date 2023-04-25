@@ -15,8 +15,8 @@ const routes = [
         component: About,
     },
     {
-        path: "/characterCreation",
-        name: "CharacterCreation",
+        path: "/character-creation",
+        name: "character-creation",
         component: CharacterCreation,
     },
 ];
