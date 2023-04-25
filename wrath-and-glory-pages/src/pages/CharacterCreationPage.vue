@@ -1,10 +1,10 @@
 <template>
-  <p> This is about Gilead page</p>
+  <p> This is the character creation page</p>
 </template>
 
 <script lang="js">
 export default {
-  name: 'AboutGilead',
+  name: 'CharacterCreationPage',
 };
 </script>
 

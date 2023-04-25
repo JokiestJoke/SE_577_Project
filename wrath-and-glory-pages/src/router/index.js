@@ -1,20 +1,29 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Welcome from '../pages/Welcome.vue';
+import Home from "../pages/HomePage";
+import About from "../pages/AboutGilead";
+import CharacterCreation from "../pages/CharacterCreationPage";
+
+const routes = [
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
+    },
+    {
+        path: "/about",
+        name: "About",
+        component: About,
+    },
+    {
+        path: "/characterCreation",
+        name: "CharacterCreation",
+        component: CharacterCreation,
+    },
+];
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: '/',
-            name: 'welcome',
-            component: Welcome
-        },
-        {
-            path: '/aboutGilead',
-            name: '',
-            component: () => import('../pages/AboutGilead.vue')
-        },
-    ]
-})
+    history: createWebHistory(),
+    routes,
+});
 
-export default router
+export default router;
