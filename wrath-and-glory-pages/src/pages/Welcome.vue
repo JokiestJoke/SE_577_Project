@@ -7,15 +7,12 @@
       creating new campaign ready "Tier 1" character archetypes.
     </p>
   </div>
-  <div class="about">
-    <Button
-        text="About the Warhammer 40k Universe"
-        backround-image="../assets/AboutMeLogo.png"
-    />
+  <div class="buttonsPanel">
+    <img src="../assets/aboutWarhammerLogo.jpg">
+    <Button text="About the Gilead System" />
+
+    <img src="../assets/CharacterCreationLogo.png">
     <Button text="Character Creation" />
-    <p>
-      This segment will be for the about me
-    </p>
   </div>
 </template>
 

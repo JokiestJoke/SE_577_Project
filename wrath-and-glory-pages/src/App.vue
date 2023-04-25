@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import WelcomePage from './components/Welcome.vue'
+import WelcomePage from './pages/Welcome.vue'
 export default {
   name: 'Wrath-and-Glory-Character-Creation',
   components: {WelcomePage},

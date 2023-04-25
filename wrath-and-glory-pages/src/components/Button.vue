@@ -13,6 +13,7 @@ export default {
       type: String,
       default: "Default Text"
     }
+
   },
   data() {}
 };
@@ -40,7 +41,7 @@ export default {
   font-size: 18px;
   line-height: 1.42857143;
   position: relative;
-  left: 35%;
+  left: 40%;
 }
 
 .button:active:hover, .button:focus, .button:hover {
