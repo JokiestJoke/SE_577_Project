@@ -6,12 +6,14 @@
 </script>
 
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">The Gilead System</router-link> |
-      <router-link to="/character-creation">Character Creation</router-link>
-    </div>
+  <div id="mainContainer">
+    <header>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">The Gilead System</router-link> |
+        <router-link to="/character-creation">Character Creation</router-link>
+      </div>
+    </header>
 
     <div id="logoContainer">
       <img id="logo" src="./assets/WrathAndGloryLogo.jpg" alt="Wrath and Glory Logo" width="400" height="250">
@@ -27,28 +29,23 @@ header {
   max-height: 100vh;
 }
 
-logoContainer {
+mainContainer {
   display: flex;
-  justify-content: center;
-;
+  flex-direction: column;
 }
 
-logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 nav {
   width: 100%;
   font-size: 24px;
   text-align: center;
   margin-top: 2rem;
+
+  justify-content: center;
 }
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+
 nav a {
   display: inline-block;
   padding: 0 1rem;

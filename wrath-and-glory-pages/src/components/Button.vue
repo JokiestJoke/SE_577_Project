@@ -23,12 +23,12 @@ export default {
 <style>
 
 .button {
-  background-color: #d0d0d5;
+  background-color: #60b13c;
   border-width: 3px;
   border-color: #1b1b32;
   border-radius: 0;
   border-style: solid;
-  color: #1b1b32;
+  color: var(--color-text);
   display: block;
   margin-bottom: 1px;
   font-weight: normal;
