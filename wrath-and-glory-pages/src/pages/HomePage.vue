@@ -30,7 +30,7 @@ import Button from "../components/Button"
 <script setup lang="js">
 //Most code goes here
 import { onMounted, ref } from 'vue';
-import {StudentApiInterface} from './ApiInterfaces';
+import {StudentApiInterface} from './ApiInterfaces.ts';
 import axios from 'axios';
 
 //Most code goes here
