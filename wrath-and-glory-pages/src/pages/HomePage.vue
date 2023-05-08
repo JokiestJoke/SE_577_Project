@@ -29,29 +29,6 @@ import Button from "../components/Button"
 
 <script setup lang="js">
 //Most code goes here
-import { onMounted, ref } from 'vue';
-import {StudentApiInterface} from './ApiInterfaces.ts';
-import axios from 'axios';
-
-//Most code goes here
-//let studentData = ref<StudentApiInterface[]>([])
-let studentData = ref<StudentApiInterface>([]);
-
-onMounted(async () => {
-  console.log("Page 1 mounted")
-
-  //this is where to go and get the student data
-  let allStudentsURI = 'http://localhost:9500/students'
-
-  //Use axios to load the student data - readup on await to make
-  //async calls easier
-  let studentAPI = await axios.get<StudentApiInterface>(allStudentsURI)
-
-  //if OK, set the studentData variable, so that we can render in the ui
-  if(studentAPI.status == 200){
-    studentData.value = studentAPI.data
-  }
-})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
